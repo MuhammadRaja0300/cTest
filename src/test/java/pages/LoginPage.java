@@ -34,13 +34,9 @@ public class LoginPage {
     WebElement txt_TermsCondition;
 
 
-
-
-
-
     public LoginPage(WebDriver driver) {
         this.driver = driver;
-        PageFactory.initElements(driver , this);
+        PageFactory.initElements(driver, this);
 
         //		if(!driver.getTitle().equals("Login to your Business Account")) {
         //			throw new IllegalPathStateException("This is not login page" + driver.getCurrentUrl());

@@ -22,12 +22,13 @@ public class SignUpPage {
 
     public SignUpPage(WebDriver driver) {
         this.driver = driver;
-        PageFactory.initElements(driver , this);
+        PageFactory.initElements(driver, this);
 
         //		if(!driver.getTitle().equals("Login to your Business Account")) {
         //			throw new IllegalPathStateException("This is not login page" + driver.getCurrentUrl());
         //		}
     }
+
     public void checkBackToLoginShown() {
         txt_back_To_Login.isDisplayed();
     }

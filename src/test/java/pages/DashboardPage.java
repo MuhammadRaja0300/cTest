@@ -28,7 +28,7 @@ public class DashboardPage {
 
     public DashboardPage(WebDriver driver) {
         this.driver = driver;
-        PageFactory.initElements(driver , this);
+        PageFactory.initElements(driver, this);
 
         //		if(!driver.getTitle().equals("Login to your Business Account")) {
         //			throw new IllegalPathStateException("This is not login page" + driver.getCurrentUrl());
@@ -43,6 +43,7 @@ public class DashboardPage {
     public void clickAddTransaction() {
         btn_Addtransaction.click();
     }
+
     public void checkAddIncomeIsVisible() {
         btn_AddIncome.isDisplayed();
     }
@@ -58,6 +59,7 @@ public class DashboardPage {
     public void clickAddExpenseBtn() {
         btn_AddExpense.click();
     }
+
     public void checkAddWdIsVisible() {
         btn_AddWithdrawal.isDisplayed();
     }
