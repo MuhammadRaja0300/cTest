@@ -22,7 +22,7 @@ public class Login_SD {
 
     @Before
     public void setup() {
-        System.getProperty("webdriver.chrome.driver" , "/Users/muhammad/eclipse-workspace/CucumberTest/drivers/chromedriver");
+        System.getProperty("webdriver.chrome.driver", "/Users/muhammad/eclipse-workspace/CucumberTest/drivers/chromedriver");
 //		ChromeOptions options = new ChromeOptions();
 //		options.addArguments("--headless");
         driver = new ChromeDriver();
@@ -89,9 +89,9 @@ public class Login_SD {
         Thread.sleep(4000);
         String currntUrl = driver.getCurrentUrl();
         String expectedUrl = "https://metricapp.co/terms-of-service/";
-        if(currntUrl.equals(expectedUrl)) {
+        if (currntUrl.equals(expectedUrl)) {
             System.out.print("url match");
-        }else {
+        } else {
             System.out.print("url not match");
         }
 
@@ -107,9 +107,9 @@ public class Login_SD {
         Thread.sleep(4000);
         String currntUrl = driver.getCurrentUrl();
         String expectedUrl = "https://metricapp.co/privacy-policy/";
-        if(currntUrl.equals(expectedUrl)) {
+        if (currntUrl.equals(expectedUrl)) {
             System.out.print("url match");
-        }else {
+        } else {
             System.out.print("url not match");
         }
 
@@ -125,6 +125,7 @@ public class Login_SD {
     public void press_login() {
         loginPage.clickLogin();
     }
+
     @Then("verify login page")
     public void verify_login_page() {
         loginPage.verifyLoginPage();
