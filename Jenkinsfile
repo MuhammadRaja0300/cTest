@@ -10,7 +10,7 @@ pipeline {
             steps {
                 script {
                     // Use the configured Maven installation
-                    withMaven(maven: 'Maven 3.9.9') {
+                    withMaven(maven: 'Apache Maven 3.9.9') {
                         sh 'mvn clean test'
                     }
                 }
